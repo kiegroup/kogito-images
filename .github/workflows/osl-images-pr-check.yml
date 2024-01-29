@@ -1,0 +1,22 @@
+name: OSL Images PR check
+
+on: pull_request
+jobs:
+  validate_osl_imagestream:
+    concurrency:
+      group: ${{ github.repository.name }}_validate_osl_imagestream-${{ github.head_ref }}
+      cancel-in-progress: true
+    name: Validate OSL imagestreams
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download openshift-validator-tool
+        run: |
+          wget https://github.com/jboss-container-images/jboss-kie-modules/raw/main/tools/openshift-template-validator/openshift-template-validator-linux-amd64
+      - name: Add execution permission to openshift-validator-tool
+        run: |
+          chmod +x openshift-template-validator-linux-amd64
+          mv openshift-template-validator-linux-amd64 ${HOME}
+      - name: validate OSL imagestream
+        run: |
+          ${HOME}/openshift-template-validator-linux-amd64 validate -f openshift-serverless-logic-imagestream.yaml

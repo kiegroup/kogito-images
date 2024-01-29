@@ -41,8 +41,8 @@ maven_plugins_gav=("org.apache.maven.plugins:maven-resources-plugin:3.3.1" "org.
 # Properties to be replaced in the pom by the new versions
 properties_with_versions=("compiler-plugin.version:3.11.0" "surefire-plugin.version:3.1.2")
 
-# arch specific dependencies
-quarkus_extensions_arch_specific="com.aayushatharva.brotli4j:native-linux-aarch64:1.8.0"
+# extra dependencies required for offline mode
+quarkus_extensions_extra_deps="com.aayushatharva.brotli4j:native-linux-aarch64:1.12.0,org.apache.maven.plugins:maven-deploy-plugin:3.1.1,org.apache.maven.plugins:maven-site-plugin:3.12.1"
 # common extensions used by the kogito-swf-builder and kogito-swf-devmode
 quarkus_extensions="quarkus-kubernetes,smallrye-health,org.kie.kogito:kogito-quarkus-serverless-workflow:${kogito_version},org.kie.kogito:kogito-addons-quarkus-knative-eventing:${kogito_version},org.kie.kogito:kogito-addons-quarkus-microprofile-config-service-catalog:${kogito_version},org.kie.kogito:kogito-addons-quarkus-kubernetes:${kogito_version},org.kie.kogito:kogito-addons-quarkus-knative-serving:${kogito_version}"
 # dev mode purpose extensions used only by the kogito-swf-devmode
@@ -57,10 +57,10 @@ fi
 
 case ${image_name} in
     "kogito-swf-builder")
-        quarkus_extensions="${quarkus_extensions},${kogito_swf_builder_extensions},${quarkus_extensions_arch_specific}"
+        quarkus_extensions="${quarkus_extensions},${kogito_swf_builder_extensions},${quarkus_extensions_extra_deps}"
         ;;
     "kogito-swf-devmode")
-        quarkus_extensions="${quarkus_extensions},${kogito_swf_devmode_extensions},${quarkus_extensions_arch_specific}"
+        quarkus_extensions="${quarkus_extensions},${kogito_swf_devmode_extensions},${quarkus_extensions_extra_deps}"
         ;;
     *)
         echo "${image_name} is not a quarkus app image, exiting..."
