@@ -44,11 +44,11 @@ properties_with_versions=("compiler-plugin.version:3.11.0" "surefire-plugin.vers
 # extra dependencies required for offline mode
 quarkus_extensions_extra_deps="com.aayushatharva.brotli4j:native-linux-aarch64:1.12.0"
 # common extensions used by the kogito-swf-builder and kogito-swf-devmode
-quarkus_extensions="quarkus-kubernetes,smallrye-health,org.kie.kogito:kogito-quarkus-serverless-workflow:${kogito_version},org.kie:kie-addons-quarkus-knative-eventing:${kogito_version},org.kie:kogito-addons-quarkus-microprofile-config-service-catalog:${kogito_version},org.kie:kie-addons-quarkus-kubernetes:${kogito_version},org.kie:kogito-addons-quarkus-knative-serving:${kogito_version}"
+quarkus_extensions="quarkus-kubernetes,smallrye-health,org.kie.kogito:kogito-quarkus-serverless-workflow:${kogito_version},org.kie:kie-addons-quarkus-knative-eventing:${kogito_version},org.kie:kogito-addons-quarkus-microprofile-config-service-catalog:${kogito_version},org.kie:kie-addons-quarkus-kubernetes:${kogito_version},org.kie:kogito-addons-quarkus-knative-serving:${kogito_version},org.kie:kie-addons-quarkus-process-management:${kogito_version},org.kie:kie-addons-quarkus-source-files:${kogito_version}"
 # dev mode purpose extensions used only by the kogito-swf-devmode
-kogito_swf_devmode_extensions="org.kie.kogito:sonataflow-quarkus-devui:${kogito_version},org.kie:kie-addons-quarkus-source-files:${kogito_version},org.kie:kie-addons-quarkus-process-management:${kogito_version},org.kie:kogito-addons-quarkus-jobs-service-embedded:${kogito_version},org.kie:kogito-addons-quarkus-data-index-inmemory:${kogito_version}"
+kogito_swf_devmode_extensions="org.kie.kogito:sonataflow-quarkus-devui:${kogito_version},org.kie:kogito-addons-quarkus-jobs-service-embedded:${kogito_version},org.kie:kogito-addons-quarkus-data-index-inmemory:${kogito_version}"
 # builder/prod extensitons used only by the kogito-swf-builder
-kogito_swf_builder_extensions="org.kie:kie-addons-quarkus-events-process:${kogito_version},org.kie:kie-addons-quarkus-process-management:${kogito_version},org.kie:kie-addons-quarkus-source-files:${kogito_version},org.kie:kogito-addons-quarkus-jobs-knative-eventing:${kogito_version}"
+kogito_swf_builder_extensions="org.kie:kie-addons-quarkus-events-process:${kogito_version},org.kie:kogito-addons-quarkus-jobs-knative-eventing:${kogito_version}"
 
 if [ -z ${quarkus_platform_version} ]; then
     echo "Please provide the quarkus version"
