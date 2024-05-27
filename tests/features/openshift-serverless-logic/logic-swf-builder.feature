@@ -1,4 +1,4 @@
-@openshift-serverless-1-tech-preview/logic-swf-builder-rhel8
+@openshift-serverless-1/logic-swf-builder-rhel8
 Feature: logic-swf-builder-rhel8 feature
 
   Scenario: verify if all labels are correctly set on logic-swf-builder-rhel8 image
