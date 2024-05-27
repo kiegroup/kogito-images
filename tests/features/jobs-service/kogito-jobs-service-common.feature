@@ -1,6 +1,8 @@
 @quay.io/kiegroup/kogito-jobs-service-ephemeral
 @quay.io/kiegroup/kogito-jobs-service-postgresql
 @quay.io/kiegroup/kogito-jobs-service-allinone
+@openshift-serverless-1/logic-jobs-service-ephemeral-rhel8
+@openshift-serverless-1/logic-jobs-service-postgresql-rhel8
 Feature: Kogito-jobs-service common feature.
 
   Scenario: verify if the events is correctly enabled

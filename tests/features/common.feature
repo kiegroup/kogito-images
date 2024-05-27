@@ -5,6 +5,11 @@
 @quay.io/kiegroup/kogito-jobs-service-postgresql
 @quay.io/kiegroup/kogito-swf-builder
 @quay.io/kiegroup/kogito-base-builder
+@openshift-serverless-1/logic-swf-builder-rhel8
+@openshift-serverless-1/logic-data-index-ephemeral-rhel8
+@openshift-serverless-1/logic-jobs-service-ephemeral-rhel8
+@openshift-serverless-1/logic-data-index-postgresql-rhel8
+@openshift-serverless-1/logic-jobs-service-postgresql-rhel8
 Feature: Common tests for Kogito images
 
   Scenario: Verify if Kogito user is correctly configured

@@ -1,6 +1,8 @@
 @quay.io/kiegroup/kogito-data-index-ephemeral
 @quay.io/kiegroup/kogito-data-index-postgresql
 @quay.io/kiegroup/kogito-jit-runner
+@openshift-serverless-1/logic-data-index-ephemeral-rhel8
+@openshift-serverless-1/logic-data-index-postgresql-rhel8
 Feature: kogito supporting services common feature
 
 Scenario: Verify if the application jar exists

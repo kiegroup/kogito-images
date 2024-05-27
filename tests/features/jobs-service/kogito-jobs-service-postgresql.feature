@@ -1,4 +1,5 @@
 @quay.io/kiegroup/kogito-jobs-service-postgresql
+@openshift-serverless-1/logic-jobs-service-postgresql-rhel8
 Feature: Kogito-jobs-service-postgresql feature.
 
   Scenario: verify if all labels are correctly set kogito-jobs-service image image

@@ -1,4 +1,5 @@
 @quay.io/kiegroup/kogito-swf-devmode
+@openshift-serverless-1/logic-swf-devmode-rhel8
 Feature: Serverless Workflow devmode images
 
   Scenario: Verify if container starts in devmode by default

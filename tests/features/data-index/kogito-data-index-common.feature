@@ -1,5 +1,7 @@
 @quay.io/kiegroup/kogito-data-index-ephemeral
 @quay.io/kiegroup/kogito-data-index-postgresql
+@openshift-serverless-1/logic-data-index-ephemeral-rhel8
+@openshift-serverless-1/logic-data-index-postgresql-rhel8
 Feature: Kogito-data-index common feature.
 
   Scenario: Verify if the debug is correctly enabled and test default http port

@@ -5,6 +5,10 @@
 #@quay.io/kiegroup/kogito-jit-runner
 @quay.io/kiegroup/kogito-jobs-service-ephemeral
 #@quay.io/kiegroup/kogito-jobs-service-postgresql
+@openshift-serverless-1/logic-data-index-ephemeral-rhel8
+@openshift-serverless-1/logic-jobs-service-ephemeral-rhel8
+#@openshift-serverless-1/logic-data-index-postgresql-rhel8
+#@openshift-serverless-1/logic-jobs-service-postgresql-rhel8
 Feature: Common tests for Kogito images
 
   Scenario: Verify if the properties were correctly set using DEFAULT MEM RATIO
