@@ -49,9 +49,8 @@ modules:
     - name: org.kie.kogito.logging
     - name: org.kie.kogito.launch.scripts
     - name: org.kie.kogito.dynamic.resources
-    - name: org.kie.kogito.maven.prod
-      version: "3.9.3"
     - name: org.kie.kogito.maven.common
+    - name: org.kie.kogito.maven.osl
     - name: org.kie.kogito.project.versions
     - name: org.kie.kogito.swf.common.scripts
     - name: org.kie.kogito.swf.devmode.runtime.common
