@@ -17,15 +17,8 @@
 # under the License.
 #
 schema_version: 1
-name: org.kie.kogito.maven.prod
-version: "3.9.3"
+name: org.kie.kogito.maven.osl
+version: "999-SNAPSHOT"
 
-envs:
-  - name: "MAVEN_VERSION"
-    value: "3.9.3"
-
-artifacts:
-  - name: apache-maven-3.9.3-bin.tar.gz
-    url: https://download.devel.redhat.com/brewroot/packages/org.apache.maven-apache-maven/3.9.3/1/maven/org/apache/maven/apache-maven/3.9.3/apache-maven-3.9.3-bin.tar.gz
-    md5: f3fbff830d9a0dc2c6c99a76e27d0c01
-
+execute:
+  - script: configure
