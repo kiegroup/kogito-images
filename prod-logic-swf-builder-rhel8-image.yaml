@@ -59,6 +59,7 @@ modules:
     - name: org.kie.kogito.swf.common.scripts
     - name: org.kie.kogito.swf.builder.runtime.osl
       version: "1.33.0"
+    - name: org.kie.kogito.pkg-update
 
 run:
   workdir: "/home/kogito/${PROJECT_ARTIFACT_ID}"
