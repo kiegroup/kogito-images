@@ -18,11 +18,16 @@
 #
 
 @docker.io/apache/incubator-kie-kogito-data-index-ephemeral
+@openshift-serverless-1/logic-data-index-ephemeral-rhel8
 @docker.io/apache/incubator-kie-kogito-data-index-postgresql
+@openshift-serverless-1/logic-data-index-postgresql-rhel8
 @docker.io/apache/incubator-kie-kogito-jit-runner
 @docker.io/apache/incubator-kie-kogito-jobs-service-ephemeral
+@openshift-serverless-1/logic-jobs-service-ephemeral-rhel8
 @docker.io/apache/incubator-kie-kogito-jobs-service-postgresql
+@openshift-serverless-1/logic-jobs-service-postgresql-rhel8
 @docker.io/apache/incubator-kie-sonataflow-builder
+@openshift-serverless-1/logic-swf-builder-rhel8
 @docker.io/apache/incubator-kie-kogito-base-builder
 Feature: Common tests for Kogito images
 

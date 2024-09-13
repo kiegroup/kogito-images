@@ -18,6 +18,7 @@
 #
 
 @docker.io/apache/incubator-kie-kogito-data-index-postgresql
+@openshift-serverless-1/logic-data-index-postgresql-rhel8
 Feature: Kogito-data-index postgresql feature.
 
   Scenario: verify if of container is correctly started with postgresql parameters
