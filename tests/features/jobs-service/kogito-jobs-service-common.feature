@@ -18,7 +18,9 @@
 #
 
 @docker.io/apache/incubator-kie-kogito-jobs-service-ephemeral
+@openshift-serverless-1/logic-jobs-service-ephemeral-rhel8
 @docker.io/apache/incubator-kie-kogito-jobs-service-postgresql
+@openshift-serverless-1/logic-jobs-service-postgresql-rhel8
 @docker.io/apache/incubator-kie-kogito-jobs-service-allinone
 Feature: Kogito-jobs-service common feature.
 

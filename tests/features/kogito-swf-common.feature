@@ -18,7 +18,9 @@
 #
 
 @docker.io/apache/incubator-kie-sonataflow-builder
+@openshift-serverless-1/logic-swf-builder-rhel8
 @docker.io/apache/incubator-kie-sonataflow-devmode
+@openshift-serverless-1/logic-swf-devmode-rhel8
 Feature: Serverless Workflow images common
 
   Scenario: Verify if the swf and quarkus files are under /home/kogito/.m2/repository
